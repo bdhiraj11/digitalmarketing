@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font library -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- google font library close here -->
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Digital Marketing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.859);
+
+        }
+
+        #navbar .Gnavbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 0 40px;
+            overflow: hidden;
+
+        }
+
+        #navbar .Gnavbar .logo h1 {
+            font-size: 38px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        #navbar .Gnavbar .logo h1 span {
+            color: #fdac53;
+        }
+
+        #navbar .Gnavbar .nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        #navbar .Gnavbar .nav ul li {
+            list-style-type: none;
+            margin: 0 10px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        #navbar .Gnavbar .nav ul li:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        #hero {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.682), rgba(45, 45, 45, 0.644)), url(./image/carousel-3\ \(1\).jpg);
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #hero .info {
+            height: 100%;
+            width: 900px;
+            padding: 35px 0;
+            color: #fff;
+
+        }
+
+        #hero .info h2 {
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        #hero .info h1 {
+            font-size: 60px;
+            font-weight: 800;
+            padding: 15px 0;
+
+        }
+
+        #hero .info .btn button {
+            font-size: 16px;
+            color: black;
+            transition: 0.3s ease-in-out;
+            background-color: #fdac53;
+            padding: 7px 18px;
+        }
+
+        #hero .info .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #tap {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+
+        }
+
+        #tap .card {
+            height: auto;
+            width: 400px;
+            margin: 55px;
+        }
+
+        #tap .card .image {
+            height: 380px;
+            width: 400px;
+
+
+        }
+
+        #tap .card1 {
+            height: auto;
+            width: 550px;
+        }
+
+        #tap .card1 span {
+            font-size: 15px;
+            background-color: #fdac53;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        #tap .card1 h1 {
+            font-size: 40px;
+            font-family: 800;
+        }
+
+        #tap .card1 .btn button {
+            font-size: 15px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #tap .card1 .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #trip {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #trip .box {
+            height: 130px;
+            width: 330px;
+            background-color: #fff;
+            margin: 30px;
+            display: flex;
+
+            align-items: center;
+            border: 1px dashed rgba(0, 0, 0, 0.814);
+
+
+
+        }
+
+        #trip .box i {
+            font-size: 38px;
+            color: #ff8400;
+            padding: 15px;
+            margin: 25px 0;
+
+
+        }
+
+        #tap h1 {
+            font-size: 15px;
+            padding: 0 0 0 15px;
+
+        }
+
+        #tap p {
+            padding: 0 0 0 15px;
+            color: rgba(0, 0, 0, 0.747);
+
+        }
+
+        #one {
+            height: 100%;
+            width: 100%;
+        }
+
+        #one .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #one .parent .web {
+            height: auto;
+            width: 400px;
+            margin: 20px;
+        }
+
+        #one .parent .main {
+            height: auto;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #one .parent .web span {
+            background-color: #ff8400;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        #one .parent .web h1 {
+            font-size: 42px;
+            font-weight: 800;
+
+        }
+
+        #one .parent .web p {
+            font-size: 18px;
+            color: #737d87;
+            padding: 10px;
+        }
+
+        #one .web .btn button {
+            font-size: 18px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #one .web .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #one .parent .main .box {
+            height: 220px;
+            width: 300px;
+            margin: 10px;
+            display: flex;
+
+        }
+
+        #one .parent .main .box i {
+            font-size: 40px;
+            color: #ff8400;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        #one .parent .main .box h1 {
+            margin: 30px 0 5px 0;
+        }
+
+        #one .parent .main .box p {
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        #one .parent .main .box h5 {
+            padding: 18px 0;
+            color: #ff8400e3;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #one .parent .main .box h5:hover {
+            color: #ff8400;
+            text-decoration: underline;
+        }
+
+        #content {
+            height: 100%;
+            width: 100%;
+            margin: 100px 0;
+        }
+
+        #content .parent {
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #content .parent .happy {
+            height: auto;
+            width: 500px;
+            margin: 20px;
+        }
+
+        #content .parent .happy span {
+            background-color: #ff8400;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        #content .parent .happy h1 {
+            font-size: 38px;
+            font-weight: 800;
+        }
+
+        #content .parent .happy h3 {
+            font-size: 20px;
+            padding: 15px 0;
+            color: #7f6e60;
+            font-weight: 400;
+        }
+
+        #content .parent .happy li {
+            font-weight: 400;
+        }
+
+        #content .happy .btn button {
+            font-size: 18px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #content .happy .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #content .parent .main {
+            height: auto;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #content .parent .main .box {
+            height: auto;
+            width: 260px;
+            margin: 10px;
+            border: 1px dashed grey;
+        }
+
+        #content .parent .main .box h1 {
+            color: #ff8400;
+            font-size: 55px;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        #content .parent .main .box h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #the {
+            height: 100%;
+            width: 100%;
+            margin: 100px 0;
+        }
+
+        #the .parent {
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #the .parent .child {
+            height: auto;
+            width: 390px;
+            margin: 20px;
+        }
+
+        #the .parent .child span {
+            background-color: #ff8400;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #the .parent .child h1 {
+            font-size: 45px;
+            font-weight: 900;
+        }
+
+        #the .parent .child p {
+            font-size: 21px;
+            font-weight: 400;
+        }
+
+        #the .child .btn button {
+            font-size: 18px;
+            padding: 6px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #the .child .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #the .parent .main {
+            height: auto;
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #the .parent .main .box {
+            height: auto;
+            width: 240px;
+            margin: 10px;
+            border: 1px solid rgba(7, 0, 0, 0.321);
+        }
+
+        #the .parent .main .box .image {
+            height: auto;
+            width: 240px;
+        }
+
+        #the .parent .main .box h3 {
+            text-align: center;
+        }
+
+        #the .parent .main .box p {
+            font-weight: 300;
+            text-align: center;
+        }
+
+        #two {
+            height: 100%;
+            width: 100%;
+        }
+
+        #two .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #two .parent .main {
+            height: auto;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #two .parent .main .box {
+            height: auto;
+            width: 295px;
+            margin: 10px;
+            border: 1px solid grey;
+        }
+
+        #two .parent .child {
+            height: auto;
+            width: 460px;
+            margin: 20px;
+
+        }
+
+        #two .parent .main .box h1 {
+            font-size: 35px;
+            text-align: center;
+            font-weight: 900;
+        }
+
+        #two .parent .main .box h2 {
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        #two .parent .main .box p {
+            text-align: center;
+            font-size: 17px;
+        }
+
+        #two .parent .main .box .btn button {
+            font-size: 18px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #two .parent .main .box .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #two .parent .child span {
+            background-color: #ff8400;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #two .parent .child h1 {
+            font-size: 39px;
+            font-weight: 900;
+        }
+
+        #two .parent .child p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #two .parent .child h3 {
+            font-size: 18px;
+        }
+
+        #two .parent .child .btn button {
+            font-size: 18px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        #two .parent .child .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #about {
+            height: 100%;
+            width: 100%;
+            margin: 100px 0;
+
+
+        }
+
+        #about .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #about .parent .child {
+            height: 320px;
+            width: 390px;
+            margin: 10px;
+
+        }
+
+        #about .parent .box {
+            height: 320px;
+            width: 390px;
+            margin: 10px;
+
+        }
+
+        #about .parent .box .dhi {
+            border: 1px solid rgba(0, 0, 0, 0.318);
+        }
+
+        #about .parent .box .clint {
+            display: flex;
+            align-items: center;
+
+        }
+
+        #about .parent .box .clint .info {
+            text-align: left;
+            margin: 0 0 0 10px;
+        }
+
+        #about .parent .child span {
+            background-color: #ff8400;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        #about .parent .child h1 {
+            font-size: 39px;
+            font-weight: 900;
+        }
+
+        #about .parent .child p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #about .parent .child .btn button {
+            font-size: 18px;
+            padding: 5px 15px;
+            background-color: #fdac53;
+            margin: 10px 0;
+            border: transparent;
+            transition: 0.3s ease-in-out;
+        }
+
+        #about .parent .child .btn button:hover {
+            background-color: #ff8400;
+        }
+
+        #about .parent .box img {
+            background-size: cover;
+            object-fit: cover;
+            height: 70px;
+            width: 70px;
+            margin: 15px 0;
+            border-radius: 50%;
+        }
+
+        #blog {
+            height: 100%;
+            width: 100%;
+        }
+
+        #blog h3 {
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            font-weight: 600;
+            padding: 20px 0 0 0;
+        }
+
+        #blog span {
+            background-color: #ff8400;
+        }
+
+        #blog h1 {
+            font-size: 35px;
+            text-align: center;
+        }
+
+        #blog .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #blog .parent .box {
+            height: 470px;
+            width: 550px;
+            margin: 30px;
+            border: 1px solid rgba(0, 0, 0, 0.323);
+
+        }
+
+        #blog .parent .image {
+            height: auto;
+            width: 550px;
+        }
+
+        #blog .parent .box .info {
+            display: flex;
+            align-items: center;
+        }
+
+        #blog .parent .box .info img {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            margin: 0 10px;
+        }
+
+        #blog .parent .box .info h5 {
+            padding: 0 10px;
+            font-weight: 300;
+        }
+
+        #blog .parent .box .info h5:hover {
+            color: rgba(0, 0, 0, 0.651);
+            text-decoration: underline;
+        }
+
+        #blog .parent .box .info h6 {
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        #blog .parent .box .info h6:hover {
+            color: rgba(0, 0, 0, 0.651);
+            text-decoration: underline;
+        }
+
+        #blog .parent .box .info i {
+            color: #fdac53;
+        }
+
+        #blog .parent .box h2 {
+            font-size: 21px;
+            font-weight: 500;
+            padding: 10px;
+        }
+
+        #blog .parent .box h2:hover {
+            color: #ff8400;
+            text-decoration: underline;
+        }
+
+        #auto {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+
+        #auto .parent {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        #auto .parent .box {
+            height: 250px;
+            width: 320px;
+            margin: 10px;
+        }
+
+        #auto .parent .box .fun {
+            display: flex;
+            align-items: center;
+        }
+
+        #auto .parent .box h1 span {
+            color: #ff8400;
+        }
+
+        #auto .parent .box h1 {
+            color: #fff;
+            font-size: 35px;
+        }
+
+        #auto .parent .box p {
+            color: #fff;
+            font-weight: 400;
+
+        }
+
+        #auto .parent .box .font i {
+            border-radius: 50%;
+            color: #ff8400;
+            border: 1px solid #fdac53;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #auto .parent .box i:hover {
+            background-color: #ff8400;
+            color: #000;
+        }
+
+        #auto .parent .box h3 {
+            color: #ff8400;
+            font-size: 21px;
+        }
+
+        #auto .parent .box li {
+            color: #fff;
+            font-size: 16px;
+            padding: 0 0 0 20px;
+        }
+
+        #auto .parent .box li:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #auto .parent .box .fun i {
+            color: #ff8400;
+            padding: 10px 0;
+        }
+
+        #auto .parent .box .fun p {
+            padding: 0 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="Gnavbar">
+            <div class="logo">
+                <h1><span>D</span>ot<span>C</span>om</h1>
+
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Pricing</li>
+                    <li>Pages</li>
+                    <li>Contact Us</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="hero">
+        <div class="info">
+            <h2>CREATIVE AGENCY</h2>
+            <h1>Creative Services For<br> Brands Grow</h1>
+            <div class="btn">
+                <button>Learn More</button>
+            </div>
+        </div>
+
+    </section>
+    <section id="tap">
+        <div class="card">
+            <img src="./image/about.jpg" class="image" alt="">
+        </div>
+        <div class="card1">
+            <span>WHO WE ARE</span>
+            <h1>Most Effective Creative Service Provider For Companies</h1>
+            <p>Eirmod est dolor nonumy sea amet dolore erat sit dolor et dolor vero. Tempor ipsum at justo amet at ipsum
+                justo. Aiam kasd sea sit dolor duo elitr dolor amet, justo est ipsum amet dolor ut ipsum. Labore diam et
+                nonumy amet dolores. Volup sit labore dolores erat, magna justo sed lorem kasd ea dolor. Labore sit
+                clita invidunt, est dolores lorem sed ipsum kasd no amet ipsum. </p>
+
+            <div class="btn">
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+    <sectiom id="trip">
+
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <div class="info">
+                <h1>Our Office</h1>
+                <p>123 Street, New York, USA</p>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="info">
+                <h1>Email Us</h1>
+                <p>mail@domain.com</p>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-phone"></i>
+            <div class="info">
+                <h1>Call Us</h1>
+                <p>+012 345 6789</p>
+            </div>
+        </div>
+    </sectiom>
+    <section id="one">
+        <div class="parent">
+            <div class="web">
+                <span>WHAT WE DO</span>
+                <h1>We Offer Creative Services</h1>
+                <p>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita
+                    diam tempor elitr</p>
+
+                <div class="btn">
+                    <button>Discover More</button>
+                </div>
+
+            </div>
+            <div class="main">
+                <div class="box">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <div class="info">
+                        <h1>Web Design</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat
+                        </p>
+                        <h5>Read More>></h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="info">
+                        <h1>Development</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat
+                        </p>
+                        <h5>Read More>></h5>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <div class="info">
+                        <h1>Marketing</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed
+                            elitr erat</p>
+                        <h5>Read More>></h5>
+
+                    </div>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <div class="info">
+                        <h1>Strategy</h1>
+                        <p>Et kasd justo clita amet kasd, vero amet vero eos kasd diam justo, ipsum diam sed elitr erat
+                        </p>
+                        <h5>Read More>></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="parent">
+            <div class="happy">
+                <span>WHY CHOOSE US</span>
+                <h1>25 Years Expereince</h1>
+                <h3>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem</h3>
+
+                <li>Lorem ut kasd dolores elitr</li>
+                <li>Jsto dolor lorem ipsum</li>
+                <li>Diama ipsum est dolor</li>
+                <div class="btn">
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <h1>25</h1>
+                    <h2>Years Expereince</h2>
+                </div>
+                <div class="box">
+                    <h1>225</h1>
+                    <h2>SKilled Experts</h2>
+                </div>
+                <div class="box">
+                    <h1>1050</h1>
+                    <h2>Happy Clients</h2>
+                </div>
+                <div class="box">
+                    <h1>2500</h1>
+                    <h2>Complete Projects</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="the">
+        <div class="parent">
+            <div class="child">
+                <span>MEET THE TEAM</span>
+                <h1>Meet Experts of Behind Work</h1>
+                <p>Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet
+                    vero</p>
+                <div class="btn">
+                    <button>Meet All Experts</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="box">
+                    <img src="./image/team-1.jpg" class="image" alt="">
+                    <h3>John Deo</h3>
+                    <p>CEO. Founder</p>
+                </div>
+                <div class="box">
+                    <img src="./image/team-2.jpg" class="image" alt="">
+                    <h3>Kate Wilson</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="box">
+                    <img src="./image/team-3.jpg" class="image" alt="">
+                    <h3>John Brown</h3>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="two">
+        <div class="parent">
+            <div class="main">
+                <div class="box">
+                    <h2>Basic</h2><br>
+                    <h1>$49/ Mo</h1><br>
+                    <hr>
+
+                    <p>HTML5 & CSS3<br><br>Bootstrap 4<br><br>Responsive Layout<br><br>Compatible With All Browsers</p>
+                    <br>
+                    <div class="btn">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Premium</h2><br>
+                    <h1>$99/ Mo</h1><br>
+                    <hr>
+                    <p>HTML5 & CSS3<br><br>Bootstrap 4<br><br>Responsive Layout<br><br>Compatible With All Browsers</p>
+                    <br>
+                    <div class="btn">
+                        <button>Order Now</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="child">
+                <span>OUR PRICING PLAN</span>
+                <h1>We Offer Affordable and Flexible Packages</h1>
+                <p>Lorem ut kasd dolores elitr sed est duo ea ipsum justo diam, est erat lorem. Est magna sea clita diam
+                    tempor elitr</p><br>
+                <h3>Need A Custom Package?</h3>
+                <div class="btn">
+                    <button>Contact Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="parent">
+            <div class="child">
+                <span>WHAT CLIENTS SAY</span>
+                <h1>Clients Say About Our Services</h1>
+                <p>Lorem ut kasd elitr sed est duo ea ipsum justo diam, est erat lorem clita diam elitr
+                </p>
+                <div class="btn">
+                    <button>Submit Review</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="dhi">
+                    <p>Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet
+                        vero</p>
+                </div>
+                <div class="clint">
+                    <img src="./image/testimonial-2.jpg" class="image" alt="">
+                    <div class="info">
+                        <h3>Client Name</h3>
+                        <h5>Profession</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="dhi">
+                    <p>Eirmod diam magna sed sea rebum, elitr diam dolor lorem ipsum, ipsum stet magna ea diam vero stet
+                        vero</p>
+                </div>
+                <div class="clint">
+                    <img src="./image/testimonial-3.jpg" class="image" alt="">
+                    <div class="info">
+                        <h3>Client Name</h3>
+                        <h5>Profession</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <h3><span>OUR BLOG</span></h3>
+        <h1>Latest From Blog</h1>
+        <div class="parent">
+            <div class="box">
+                <img src="./image/blog-1.jpg" class="image" alt="">
+                <div class="info">
+                    <img src="./image/testimonial-2.jpg" class="image" alt="">
+                    <h5>John Doe </h5>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <h6>Web Design</h6>
+
+                </div>
+                <h2>Kasd tempor diam sea justo dolor kasd amet dolor labore amet clita est diam dolor</h2>
+            </div>
+            <div class="box">
+                <img src="./image/blog-2.jpg" class="image" alt="">
+                <div class="info">
+                    <img src="./image/testimonial-2.jpg" class="image" alt="">
+                    <h5>John Doe </h5>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <h6>Web Design</h6>
+
+
+
+                </div>
+                <h2>Kasd tempor diam sea justo dolor kasd amet dolor labore amet clita est diam dolor</h2>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="auto">
+        <div class="parent">
+            <div class="box">
+                <h1><span>D</span>ot<span>C</span>om</h1>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <div class="font">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <ul>
+
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Pricing</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Popular Links</h3>
+                <ul>
+
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Pricing</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+
+            </div>
+            <div class="box">
+                <h3>Get In Touch</h3>
+                <p>Dolor clita stet nonumy clita diam vero, et et ipsum diam labore</p>
+                <div class="fun">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p>123 Street, New York, USA</p>
+                </div>
+                <div class="fun">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>012 345 67890</p>
+                </div>
+                <div class="fun">
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                    <p>mail@domain.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
